@@ -16,8 +16,8 @@ display = DisplayDevice(1, measurement)
 sensor = SensorDevice(measurement)
 
 # a) limitation without threading
-display.run()
 sensor.run()
+display.run()
 
 # b) with threading
 # logging.info("Starting multi-threaded system")
@@ -27,13 +27,13 @@ sensor.run()
 
 # f) multiple displays - notify all
 
-second_display = DisplayDevice(2, measurement)
-second_display.start()
+# second_display = DisplayDevice(2, measurement)
+# second_display.start()
 
 # c) wait for thread to finish
 # display.join()
 # sensor.join()
-# seconddisplay.join()
+# second_display.join()
 
 ## d) locks
 
@@ -41,8 +41,5 @@ second_display.start()
 
 # logging.info("Stopping multi-threaded system")
 
-
-
-s
 
 
